@@ -12,22 +12,22 @@ class User implements UserInterface
     private int $id;
 
     /**
-     * @var int
+     * @var string
      */
-    private int $nickname;
+    private string $nickname;
 
     /**
-     * @var int
+     * @var string
      */
-    private int $email;
+    private string $email;
 
     /**
-     * @var int
+     * @var string
      */
-    private int $password;
+    private string $password;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId(): int
     {
@@ -37,7 +37,7 @@ class User implements UserInterface
     /**
      * @return int
      */
-    public function getNickname(): int
+    public function getNickname(): string
     {
         return $this->nickname;
     }
@@ -45,7 +45,7 @@ class User implements UserInterface
     /**
      * @return int
      */
-    public function getEmail(): int
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -53,7 +53,7 @@ class User implements UserInterface
     /**
      * @return int
      */
-    public function getPassword(): int
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -67,35 +67,35 @@ class User implements UserInterface
     }
 
     /**
-     * @param int $nickname
+     * @param string $nickname
      */
-    public function setNickname(int $nickname): void
+    public function setNickname(string $nickname): void
     {
         $this->nickname = $nickname;
     }
 
     /**
-     * @param int $email
+     * @param string $email
      */
-    public function setEmail(int $email): void
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
     /**
-     * @param int $password
+     * @param string $password
      */
-    public function setPassword(int $password): void
+    public function setPassword(string $password): void
     {
         $this->password = $password;
     }
 
     /**
-     * @param int $nickname
-     * @param int $email
-     * @param int $password
+     * @param string $nickname
+     * @param string $email
+     * @param string $password
      */
-    public function hydrate(int $nickname, int $email, int $password): void
+    public function hydrate(string $nickname, string $email, string $password): void
     {
         $this->setNickname($nickname);
         $this->setEmail($email);

@@ -12,19 +12,19 @@ interface UserInterface
     public function getId(): int;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getNickname(): int;
+    public function getNickname(): string;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getEmail(): int;
+    public function getEmail(): string;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getPassword(): int;
+    public function getPassword(): string;
 
     /**
      * @param int $id
@@ -32,17 +32,17 @@ interface UserInterface
     public function setId(int $id): void;
 
     /**
-     * @param int $nickname
+     * @param string $nickname
      */
-    public function setNickname(int $nickname): void;
+    public function setNickname(string $nickname): void;
 
     /**
-     * @param int $email
+     * @param string $email
      */
-    public function setEmail(int $email): void;
+    public function setEmail(string $email): void;
 
     /**
-     * @param int $password
+     * @param string $password
      */
-    public function setPassword(int $password): void;
+    public function setPassword(string $password): void;
 }

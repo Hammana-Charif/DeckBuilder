@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 100%;
+}
+
+#cardDisplay {
+    width: 25%;
+    height: 30%;
+
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-end {
+ align-content: flex-end;
+}
+
+.flex-start {
+    align-content: flex-start;
+}
+
+.space_between {
+    align-content: space-between;
+}
+
+.margin_auto {
+    margin: auto;
+}
+
+.absolute {
+    position: center;
+}
+
+.position_fixed {
+    position: fixed;
+}
+
+.text_size {
+    font-size: 20px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.radius {
+    border-radius: 20%;
+}
+
+.position_fixed {
+    position: fixed;
+}
+
+#cardListMain {
+    flex: 1 0 auto;
+    background-image: url('../pictures/MagicTheGatheringWithoutSigle.jpg');
+    background-size: cover;
+    background-attachment:fixed
+}
+
+#deckListMain {
+    flex: 1 0 auto;
+    background-image: url('../pictures/MagicTheGatheringDeckList3.jpg');
+    background-size: cover;
+    background-attachment:fixed
+}
+
+#loginMain {
+    flex: 1 0 auto;
+    background-image: url('../pictures/MagicTheGatheringLogIn.jpg');
+    background-size: cover;
+    background-attachment:fixed
+}
+
+#signInMain {
+    flex: 1 0 auto;
+    background-image: url('../pictures/MagicTheGatheringSignIn3.png');
+    background-size: cover;
+    background-attachment:fixed
+}

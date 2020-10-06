@@ -6,8 +6,12 @@ namespace DeckBuilder\Service\Http;
 
 class ClientService
 {
-    public function get(string $url): string
+    /**
+     * @param string $link
+     * @return string
+     */
+    public function link(string $link): string
     {
-        return file_get_contents($url);
+        return file_get_contents($link);
     }
 }

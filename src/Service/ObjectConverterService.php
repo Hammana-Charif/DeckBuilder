@@ -4,11 +4,15 @@
 namespace DeckBuilder\Service;
 
 
-use DeckBuilder\Service\Http\ClientService;
+use stdClass;
 
 class ObjectConverterService
 {
-    public function convertToObject($stringContent)
+    /**
+     * @param string $stringContent
+     * @return mixed
+     */
+    public function convertToObject(string $stringContent): stdClass
     {
        return json_decode($stringContent);
     }
